@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_car"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="24dp"
+        android:elevation="24dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_car_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_dynamic_neutral90"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/img_car"
+                android:layout_width="match_parent"
+                android:layout_height="137dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/car_160895_640" />
+
+            <TextView
+                android:id="@+id/tab_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tagPrice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/img_car"
+                app:layout_constraintTop_toBottomOf="@+id/img_car" />
+
+            <TextView
+                android:id="@+id/value_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="R$ 200.000,00"
+                app:layout_constraintStart_toEndOf="@id/tab_price"
+                app:layout_constraintTop_toTopOf="@+id/tab_price" />
+
+            <TextView
+                android:id="@+id/tab_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/tagBattery"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tab_price"
+                app:layout_constraintTop_toBottomOf="@+id/tab_price" />
+
+            <TextView
+                android:id="@+id/value_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 200.000,00"
+                app:layout_constraintStart_toStartOf="@id/value_price"
+                app:layout_constraintTop_toTopOf="@+id/tab_battery" />
+
+            <TextView
+                android:id="@+id/tab_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/tagPower"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/img_car"
+                app:layout_constraintTop_toBottomOf="@+id/tab_battery" />
+
+            <TextView
+                android:id="@+id/value_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300 kWh"
+                app:layout_constraintStart_toStartOf="@id/value_price"
+                app:layout_constraintTop_toTopOf="@id/tab_power" />
+
+            <TextView
+                android:id="@+id/tab_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/tagRecharge"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/img_car"
+                app:layout_constraintTop_toBottomOf="@+id/tab_power" />
+
+            <TextView
+                android:id="@+id/value_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 min"
+                app:layout_constraintStart_toStartOf="@+id/value_price"
+                app:layout_constraintTop_toTopOf="@+id/tab_recharge" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

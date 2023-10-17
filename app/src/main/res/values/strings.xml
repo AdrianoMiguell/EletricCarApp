@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Eletric Car </string>
+    <string name="title"> Eletric Car </string>
+    <string name="tagCars"> Cars </string>
+    <string name="tagFavorite"> Favorites </string>
+    <string name="tagPrice"> Price </string>
+    <string name="tagBattery"> Battery </string>
+    <string name="tagPower"> Power </string>
+    <string name="tagRecharge"> Recharge </string>
+    <string name="et_kmhPrice"> Kmh Price </string>
+    <string name="et_kmTraveled"> Km Traveled </string>
+    <string name="calculate"> Calculate </string>
+</resources>
