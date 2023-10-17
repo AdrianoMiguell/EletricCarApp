@@ -15,11 +15,11 @@ class CarAdapter(private val cars: Array<String>) : RecyclerView.Adapter<CarAdap
         return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int = cars.size
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.textView.text = cars[position]
     }
+
+    override fun getItemCount(): Int = cars.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView : TextView
